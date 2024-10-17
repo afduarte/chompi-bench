@@ -1,0 +1,36 @@
+@import './base.css';
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-weight: normal;
+}
+
+a,
+.chompi-pink {
+  text-decoration: none;
+  color: #ffffff;
+  transition: 0.4s;
+  padding: 3px;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: var(--chompi-darker);
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    text-align: center;
+    display: flex;
+    place-items: center stretch;
+  }
+
+  #app {
+    display: grid;
+    grid-template-columns: 1fr 20fr;
+    padding: 0 2rem;
+  }
+}
